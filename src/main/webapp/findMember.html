@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>숨고 : 숨은고수 - 고수가입 </title>
+
+
+<!--  js : external -->
+<link type="text/css" rel="stylesheet" href="css/common.css">
+
+<!--  js : internal -->
+<style type="text/css">
+	body{
+	 	background-color: #FAFAFA;
+	 }
+
+
+	div{
+		margin : 1px 0; 
+	}
+
+
+	
+</style>
+
+<script type = "text/javascript">
+
+/*윈도우 로드 이벤트 함수 */
+window.onload= function(){
+	initForm();
+}
+/* 폼 초기화 함수 */
+function initForm(){
+	document.getElementById("memberEmail").focus();
+}
+
+
+/*메세지 출력 지우기*/
+function clearMsg(){
+	document.getElementById("memberEmail").innerHTML ="";
+
+}
+/*이메일 입력 검사*/
+function checkEmail(){
+	var memberEmail = document.getElementById("memberEmail").value;
+ 	console.log("memberEmail :",memberEmail);
+ 	
+ 	//데이터 검증 : 이메일 주소값이 없을 때
+ 	if(memberEmail=="" || memberEmail.trim().length == 0){	//이메일 입력없을 때
+ 		document.getElementById("memberEmail").focus();
+ 		document.getElementById("memberEmailMsg").innerHTML ="이메일주소를 입력하세요";
+ 		document.getElementById("memberEmailMsg").style.color = "red";
+ 		document.getElementById("memberEmail").value = "";	//사용자가 입력한 공백문자열을 초기화
+ 		return false;	//input type="submit"
+ 	}
+ 	
+ 	//데이터 검증 : 올바른 이메일 형식이 아닐 때
+ 	if(memberEmail.indexOf("@")==-1){
+ 		document.getElementById("memberEmail").focus();
+ 		document.getElementById("memberEmailMsg").innerHTML ="올바른 이메일 주소를 입력해주세요.";
+ 		document.getElementById("memberEmailMsg").style.color = "red";
+ 		document.getElementById("memberEmail").value = "";	//사용자가 입력한 공백문자열을 초기화
+ 		return false;	//input type="submit"
+ 	}
+ 	memberEmail = memberEmail.trim();	// 사용자 입력데이터에 있는 공백제거
+ 	console.log("공백 제거 memberEmail :",memberEmail.length);
+ 	
+ 	return location.href='main.html';
+
+}
+
+</script>
+
+</head>
+<body>
+
+<header>
+		<span><img src="img/index_soomgo_logo.png"></span>
+		<nav>
+			<ul class="topMenu">
+			<li> <a href="joinGosuMember.html" class="hederA">고수가입</a> </li>
+			<li> <a href="JoinMember.html" class="hederA">회원가입</a> </li>
+			<li> <a href="findGosuMember.html" class="hederA">고수찾기</a> </li>
+			<li> <a href="login.html" class="hederA">로그인</a> </li>
+			</ul>
+		</nav>
+</header>
+
+<main>
+<div style="border : 0px solid; text-align: center;"><h1 style="font-size :38px">비밀번호 찾기</h1>
+</div>
+<form action ="result.html" method = "post" name="PwCheckForm" id="PwCheckForm" 
+	style="border : 1px solid #BDBDBD; border-radius : 1em; position : absolute; padding:50px;
+	width:350px; height:200px; top : 250px; left : 550px; background-color:#FFFFFF;">
+	<!-- 이메일주소로 비밀번호 찾기 -->
+		<div class="input_Email" style=" font-weight : bold; color :gray;">가입한 이메일 주소를 입력해주세요</div>
+		<div><input type = "text" name="memberEmail" id="memberEmail" placeholder="example@soomgo.com" 
+					style ="border : 1px solid #BDBDBD; border-radius : 0.5em; width : 350px; height: 40px;" onkeydown="clearMsg()"></div>
+		<div><span id="memberEmailMsg"></span></div>
+		<div style="color : gray; font-size: 12px;">가입하신 이메일 주소를 입력해주시면<br>새로운 비밀번호를 설정 가능한 링크를 보내드립니다.</div>
+		<div><br></div>
+		<div>
+			<input type = "button" onclick ="checkEmail()" id ="btn_use_memberEmail" value = "이메일 전송하기" 
+			style = "font-weight : bold; width:350px; height:50px; background-color :  #00C7AE;   
+					 border-radius: 3px; border :  1px solid #EAEAEA; color : #FFFFFF;">
+		</div>
+</form>
+</main>
+
+
+</body>
+
+
+
+</html>
