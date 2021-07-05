@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>숨고 : 숨은고수 - 고수가입 </title>
+
+
+<!--  js : external -->
+<link type="text/css" rel="stylesheet" href="css/common.css">
+
+<!--  js : internal -->
+<style type="text/css">
+	body{
+	 	background-color: #FAFAFA;
+	 }
+	header{
+		background-color: #FFFFFF;
+	}
+
+	div{
+		margin : 1px 0; 
+	}
+	hr{
+		border : solid 0.5px #00C7AE;
+		width: 12%;
+	}
+	
+	.text-align{
+		text-align : center;
+	}
+	
+	.img{
+    position: relative;
+    background-image: url(img/soomgo_mission.jpg);                                                               
+    background-size: cover;
+  }
+  .img-cover{
+     position: relative;
+     height: 100%;
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.5);                                                                 
+  }
+  .img-text{
+  	position:absolute;
+  	top:200px;
+  	left:450px;
+  }
+  .pro{
+
+	text-align:center;
+  	float : center;
+    width: 480px;
+  	height: 295px;
+  	border: 0 solid;
+  background-size: cover;
+  
+  }
+    p{
+        text-align: center;
+    }
+
+
+
+
+	
+</style>
+
+
+<script type = "text/javascript">
+
+/*윈도우 로드 이벤트 함수 */
+window.onload= function(){
+	initForm();
+}
+/* 폼 초기화 함수 */
+function initForm(){
+
+}
+
+
+</script>
+
+</head>
+<body>
+
+<header>
+		<span><img src="img/index_soomgo_logo.png"></span>
+		<nav>
+			<ul class="topMenu">
+			<li> <a href="joinGosuMember.html" class="hederA" id="gosuJoin">고수가입</a> </li>
+			<li> <a href="JoinMember.html" class="hederA">회원가입</a> </li>
+			<li> <a href="findGosuMember.html" class="hederA">고수찾기</a> </li>
+			<li> <a href="login.html" class="hederA">로그인</a> </li>
+			</ul>
+		</nav>
+</header>
+
+
+
+<div class ="img" style = "height:500px;">
+	<div class="img-cover"></div>
+	<div class="img-text">
+		<div class="text-align" style="color : white; font-size:45px;">숨고의 미션</div>
+		<p class="text-align" style="color : white; ">숨고는 여러분들이 도움을 필요로 하는 일을 도와줄 고수를 무료로 빠르게 찾아드려요.</p>
+	</div>
+
+</div>
+<p>
+<div style ="text-align:center; font-size:25px; color : #525252;"><br>딱! 맞는 고수를 만나세요<p></div>
+<p>
+<hr>
+<p>
+<div style ="text-align:center; font-size:15px; color : #737373;"><br>필요한 사람을 찾는 일에 시간과 에너지를 낭비하지 마세요. 최대 48시간 안에 여러분이 찾는 사항에 딱! 맞는 고수를 찾아드립니다.</div> 
+
+<br><br>
+<div>
+	<div style="left: 120px; top:850px; font-size: 30px; color :white; font-weight: bold; text-align : center;position: absolute;">
+		14,235<br>공연/행사 고수들
+	</div>
+	<div style="left: 650px; top:850px; font-size: 30px; color :white; font-weight: bold; text-align : center;position: absolute;">
+		118,502<br>음악 고수들
+	</div>
+	<div style="left: 1100px; top:850px; font-size: 30px; color :white; font-weight: bold; text-align : center;position: absolute;">
+		141,979<br>디자인/개발 고수들
+	</div>
+	<img class ="pro " src="img/pro_count_performance.jpg" >
+	<img class ="pro " src="img/pro_count_music.jpg">
+	<img class ="pro " src="img/pro_count_design.jpg">
+
+</div>
+
+<div>
+	
+	<div style="left: 120px; top:1150px; font-size: 30px; color :white; font-weight: bold; text-align : center;position: absolute;">
+		196,141<br>인테리어 고수들
+	</div>
+	<div style="left: 650px; top:1150px; font-size: 30px; color :white; font-weight: bold; text-align : center;position: absolute;">
+		57,744<br>외국어 고수들
+	</div>
+	<div style="left: 1100px; top:1150px; font-size: 30px; color :white; font-weight: bold; text-align : center;position: absolute;">
+		49,881<br>스포츠 고수들
+	</div>
+	<img class =" pro " src="img/pro_count_interior.jpg">
+	<img class ="pro " src="img/pro_count_foreign.jpg">
+	<img class ="pro " src="img/pro_count_sports.jpg">
+
+</div>
+
+
+<p>
+<div style ="text-align:center; font-size:25px; color : #525252;"><br>숨고에 가입해보세요<p></div>
+<p>
+<hr>
+<p>
+<div style ="text-align:center; font-size:15px; color : #737373;">
+<br>조건에 딱! 맞는 고수를 찾으시나요? 딱! 맞는 고객을 찾으시나요? 숨고가 도와드리겠습니다.</div> 
+<p>
+<a href="login.html" id="login" style ="color : #00C7AE; text-align: center;">이미 계정이 있으신가요?</a>
+</p>
+	<div>
+		<input type = "button" onclick="location.href='joinMember.html'" id ="btn_joinMember" value = "요청자로 가입하기" 
+		style = "font-weight : bold; width:200px; height:50px; background-color :  #00C7AE; position:relative; left : 550px;
+				 border-radius: 3px; border :  1px solid #EAEAEA; color : #FFFFFF;">
+				 
+		<input type = "button" onclick="location.href='joinGosuMember.html'" id ="btn_joinGosuMember" value = "고수로 가입하기" 
+		style = "font-weight : bold; width:200px; height:50px; background-color :  #00C7AE;   position:relative; left : 560px;
+				 border-radius: 3px; border :  1px solid #EAEAEA; color : #FFFFFF;">
+	</div>
+	<div>
+
+	</div>
+<p>
+
+
+    
+</body>
+</html>
