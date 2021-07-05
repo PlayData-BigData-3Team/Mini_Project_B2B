@@ -12,18 +12,18 @@
 header {
   display: flex;
   background: white;
-  padding: 20px;
-  border-style:1px;
-  height:50px;
-  
+  padding:20px 20px 18px 20px;
+  border-style: solid 1px;
 }
 nav {
   margin-left: auto;
   display: inline-block;
   vertical-align: middle;
 }
-
-
+img.logo {
+width:150.23px;
+height:36px;
+}
 ul.topMenu {
   list-style: none;
   margin: 0;
@@ -33,34 +33,29 @@ ul.topMenu {
 li.icon {
   flex-basis: 25%;
 }
+a {
+	text-decoration : none;
+	font-size:15px;
+}
 a.hederA {
   display: block;
   text-align: center;
-  margin: .25rem;
+  margin: .20rem;
   padding: .5rem 1rem;
   text-decoration: none;
   font-weight: bold;
   color: grey;
 }
-a#hederA1 {
-  display: block;
-  text-align: center;
-  margin: .25rem;
-  padding: .5rem 1rem;
-  text-decoration: none;
-  font-weight: bold;
-  color: grey;
-  background-color:#FAFAFA;
-  
-   width:80px;
-   line-height:30px;
-}
-
-
 a.hederA:hover {
-  background: yellowgreen;
+  border-radius: 5px;
+  color:white;
+  background:#00C7AE;
 }
-
+#gosuJoin {
+  border-radius: 5px;
+  color:white;
+  background:#00C7AE;
+}
 
 
 main {
@@ -237,7 +232,7 @@ function confirmPw(str) {
 		<a href="main.html"><img src="./img/logo.png" style="height:40px; padding-top:5px;padding-left:5px;"></a>
 		<nav>
 			<ul class="topMenu">
-			<li> <a href="joinGosuMember.html" class="hederA" id="heaerA1">고수가입</a> </li>
+			<li> <a href="joinGosuMember.html" class="hederA" id="gosuJoin">고수가입</a> </li>
 			<li> <a href="JoinMember.html" class="hederA">회원가입</a> </li>
 			<li> <a href="usersGuide.html" class="hederA">이용안내</a> </li>
 			<li> <a href="findGosuMember.html" class="hederA">고수찾기</a> </li>
