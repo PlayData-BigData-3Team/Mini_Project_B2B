@@ -117,7 +117,7 @@ input[type=password] {
 	border:1px gray solid;
 }
 
-input[type=submit] {
+input[type=button] {
 	width:260px;
 	height:40px;
 	border-radius: 12px;
@@ -222,7 +222,38 @@ function confirmPw(str) {
     else {                       
          return false;         
     }                         
-}    
+} 
+
+function login() {
+	// 아이디 입력데이터 가져오기
+	var memberIdArray = ["user01@gmail.com", "user02@gmail.com", "user03@gmail.com"];
+	var memberPwArray = ["password01", "password02", "password03"];
+	var memberId = document.getElementById("memberId").value;
+	var memberPw = document.getElementById("memberPw").value;
+	
+	// 메세지 출력객체 가져오기
+	var memberIdMsg = document.getElementById("memberIdMsg");
+	var memberPwMsg = document.getElementById("memberPwMsg");
+	
+	// memberIdArray 크기만큼 반복 비교하면서 아이디 존재유무 체킹
+	for(index=0; index < memberIdArray.length; index++) {
+		if(!(memberId == memberIdArray[index])) {
+			memberIdMsg.innerHTML = "존재하지 않는 이메일입니다.";
+			memberIdMsg.style.color = "red";
+			document.getElementById("memberId").focus();
+			return;
+		} else if(!(memberPw == memberPwArray[index])) {
+			memberPwMsg.innerHTML = "비밀번호가 틀렸습니다.";
+			memberPwMsg.style.color = "red";
+			document.getElementById("memberId").focus();
+			return;
+		} else { 
+			alert("로그인에 성공하였습니다.");
+			return location.href="main.html";
+		}
+	}
+	
+}
 
 </script>
 </head>
@@ -243,7 +274,7 @@ function confirmPw(str) {
 <main>
 <h1 id="h2">로그인</h1>
 
-<form action = "" method = "post">
+<form method = "post">
 	
 	<div id="table1">
 	
@@ -269,7 +300,7 @@ function confirmPw(str) {
 	</tr>
 	
 	<tr>
-		<td><input type="submit" value="이메일 로그인" ></td> <!-- onclick="return checkForm();" -->
+		<td><input type="button" value="이메일 로그인" onclick="return login();" ></td> <!-- onclick="return checkForm();" -->
 	</tr>
 	
 	<tr>
