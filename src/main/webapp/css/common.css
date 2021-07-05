@@ -124,17 +124,6 @@ input {
 	line-height: 31px;
 }
 
-button {
-	width: 50px;
-	height: 100%;
-	border: 2px solid #00C7AE;
-	background: #00C7AE;
-	outline: none;
-	float: right;
-	color: #ffffff;
-}
-
-
 /* 고수등록하기 버튼 스타일 */
 .btn {
 	display: block;
@@ -164,12 +153,13 @@ button {
 
 /* 오른쪽 슬라이드 이미지 */
 .slider {
-	width: 551px;
-	height: 641px;
+	width: 500px;
+	height: 600px;
 	position: relative;
 	margin-left: 700px;
 	margin-top: 50px;
 	overflow: hidden;
+
 }
 
 .slider input[type=radio] {
