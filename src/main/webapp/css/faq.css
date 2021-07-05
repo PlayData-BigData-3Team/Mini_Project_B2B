@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* 상단 네비게이션 바 */
+header {
+  display: flex;
+  background: white;
+  padding:20px 20px 18px 20px;
+  border-style: solid 1px;
+}
+nav {
+  margin-left: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+img.logo {
+width:150.23px;
+height:36px;
+}
+ul.topMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+li.icon {
+  flex-basis: 25%;
+}
+a {
+	text-decoration : none;
+	font-size:15px;
+}
+a.hederA {
+  display: block;
+  text-align: center;
+  margin: .20rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: grey;
+}
+a.hederA:hover {
+  border-radius: 5px;
+  color:white;
+  background:#00C7AE;
+}
+#gosuJoin {
+  border-radius: 5px;
+  color:white;
+  background:#00C7AE;
+}
