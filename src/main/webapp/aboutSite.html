@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>숨고: 숨은고수 - 500만명이 선택한 생활서비스 고수 매칭</title>
+		
+
+<style type="text/css">
+
+header {
+  display: flex;
+  background: white;
+  padding:20px 20px 18px 20px;
+  border-style: solid 1px;
+
+}
+
+nav {
+  margin-left: auto;
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+
+img.logo {
+width:150.23px;
+height:36px;
+}
+
+ul.topMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li.icon {
+  flex-basis: 25%;
+}
+
+a {
+	text-decoration : none;
+	font-size:15px;
+}
+
+a.hederA {
+  display: block;
+  text-align: center;
+  margin: .20rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: grey;
+
+}
+
+a.hederA:hover {
+  border-radius: 5px;
+  color:white;
+  background:#00C7AE;
+}
+
+#gosuJoin {
+  border-radius: 5px;
+  color:white;
+  background:#00C7AE;
+}
+
+div.contents {
+	width:100%;
+	height:2000px;
+}
+
+section.section-1 {
+	margin-top:-10px;
+	height:500px;
+}
+
+img.section-img {
+   position: absolute;
+	width:100%;
+	height:500px;
+	filter: brightness(50%); 
+}
+
+div.section-1-text {
+	position: relative;
+	margin-right:auto;
+	margin-left:auto;
+	text-align:center;
+}
+
+
+h1.section-1-title {
+	padding-top:170px;
+	font-size:35px;
+	color:#F3F3F3;
+}
+
+h5.section-1-subtitle {
+	font-size:15px;
+	color:#F3F3F3;
+}
+
+section.section2 {
+	height:500px;
+}
+
+div.section-2-text {
+	margin-top:170px;
+	text-align:center;
+}
+
+
+h1.section-2-title {
+	padding-right:20px;
+	font-size:32px;
+	color:#525252;
+}
+
+h5.section-2-subtitle {
+	padding-right:20px;
+	font-size:12px;
+	color:#525252;
+	margin-bottom:170px;
+}
+
+section.section3 {
+	margin-top:200px;
+	width:100%;
+	height:600px;
+}
+
+div.section-3-images {
+	width:100%;
+	height:600px;
+}
+
+table.section3 {
+	width:100%;
+	height:600px;
+}
+
+
+section.section4 {
+	height:500px;
+}
+
+div.section-4-text {
+	margin-top:200px;
+	text-align:center;
+}
+
+
+h1.section-4-title {
+	font-size:30px;
+	color:#525252;
+}
+
+h5.section-4-subtitle {
+	font-size:11px;
+	color:#525252;
+	margin-bottom:170px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  max-height: 750px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container .mySlides img {
+  height: 750px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text-name {
+  color: #f2f2f2;
+  font-size: 35px;
+  padding: 8px 12px;
+  position: absolute;
+  margin-top:-400px;
+  width: 100%;
+  text-align: center;
+}
+
+.text-job {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  margin-top:-330px;
+  width: 100%;
+  text-align: center;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 17px;
+  padding: 8px 12px;
+  position: absolute;
+  margin-top:-270px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+hr.section-hr {
+	border: solid 1px #00C7AE;
+	text-align:center;
+	width:200px;
+	padding-right:20px;
+}
+
+section.section5 {
+	width:100%;
+	height:300px;	
+}
+
+span.card-number {
+	font-size:35px;
+	font-weight:bold;
+	color:white;
+}
+
+span.card-text {
+	font-size:14px;
+	color:white;
+}
+
+section.section6 {
+	height:500px;
+}
+
+div.section-6-text {
+	margin-top:170px;
+	text-align:center;
+}
+
+
+h1.section-6-title {
+	padding-right:20px;
+	font-size:32px;
+	color:#525252;
+}
+
+h5.section-6-subtitle {
+	padding-right:20px;
+	font-size:12px;
+	color:#525252;
+	margin-bottom:30px;
+}
+
+button.joinBtn {
+	color:white;
+	background:#00C7AE;
+	border:none;
+	width:200px;
+	height:48px;
+	border-radius:5px;
+	margin: 0px 10px;
+}
+
+button.joinBtn:hover {
+	color:white;
+	background:#00A18D;
+	border:none;
+	width:200px;
+	height:48px;
+	border-radius:5px;
+	margin: 0px 10px;
+}
+	
+</style>
+<script type="text/javascript">
+var slideIndex = 0; //slide index
+
+//HTML 로드가 끝난 후 동작
+window.onload=function(){
+showSlides(slideIndex);
+
+// Auto Move Slide
+var sec = 3000;
+setInterval(function(){
+ slideIndex++;
+ showSlides(slideIndex);
+
+}, sec);
+}
+
+
+//Next/previous controls
+function moveSlides(n) {
+slideIndex = slideIndex + n
+showSlides(slideIndex);
+}
+
+//Thumbnail image controls
+function currentSlide(n) {
+slideIndex = n;
+showSlides(slideIndex);
+}
+
+function showSlides(n) {
+
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+var size = slides.length;
+
+if ((n+1) > size) {
+ slideIndex = 0; n = 0;
+}else if (n < 0) {
+ slideIndex = (size-1);
+ n = (size-1);
+}
+
+for (i = 0; i < slides.length; i++) {
+   slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+   dots[i].className = dots[i].className.replace(" active", "");
+}
+
+slides[n].style.display = "block";
+dots[n].className += " active";
+}
+
+
+	
+	
+</script>
+
+</head>
+	
+	<body>
+		
+	<!-- 상단 내비게이션 바 -->
+	<header>
+		<img src="img/index_soomgo_logo.png" class="logo">
+		<nav>
+			<ul class="topMenu">
+			<li> <a href="joinGosuMember.html" class="hederA" id="gosuJoin">고수가입</a> </li> 
+			<li> <a href="JoinMember.html" class="hederA">회원가입</a> </li> 
+			<li> <a href="findGosuMember.html" class="hederA">고수찾기</a> </li>
+			<li> <a href="login.html" class="hederA">로그인</a> </li>
+			</ul>
+		</nav>
+	</header>
+	
+	
+	<!-- contents -->
+	<div class="contents">
+		<section class="section-1">
+			<img alt="" src="img/computer.jpg" class="section-img">
+			<div class="section-1-text">
+				<h1 class="section-1-title">숨고의 미션</h1>
+				<h5 class="section-1-subtitle">숨고는 여러분들이 도움을 필요로 하는 일을 도와줄 고수를 무료로 빠르게 찾아드려요.</h5>
+			</div>
+		</section>
+		
+		<section class="section-2">
+			<div class="section-2-text">
+				<h1 class="section-2-title">딱! 맞는 고수를 만나세요</h1> <hr class="section-hr">
+				<h5 class="section-2-subtitle">필요한 사람을 찾는 일에 시간과 에너지를 낭비하지 마세요. 최대 48시간 안에 여러분이 찾는 사항에 딱! 맞는 고수를 찾아드립니다.</h5>
+			</div>
+		</section>
+		
+		<section class="section-3">
+			<div class="section-3-images">
+				<table class="section3" style="text-align:center">
+					<tbody style="width:100%; height:600px;">
+					<tr class="card-info" style="width:100%; height:300px;">
+						<td style="background-image:url('img/card1.jpg'); width:33.3%; height:300px; filter: brightness(60%);">
+						<span class="card-number" style="color:white;" >14,235</span><br>
+						<span class="card-text" >공연/행사 고수들</span></td>
+						
+						<td style="background-image:url('img/card2.jpg'); width:33.3%; height:300px; filter: brightness(60%);">
+						<span class="card-number" >118,502</span><br>
+						<span class="card-text" >음악 고수들</span></td>
+						
+						<td style="background-image:url('img/card3.jpg'); width:33.3%; height:300px; filter: brightness(60%);">
+						<span class="card-number" >141,979</span><br>
+						<span class="card-text" >디자인/개발 고수들</span></td>
+					</tr>
+					<tr class="card-info"  style="width:100%; height:300px;">
+						<td style="background-image:url('img/card4.jpg'); width:33.3%; height:300px; filter: brightness(60%);">
+						<span class="card-number" >196,141</span><br>
+						<span class="card-text" >인테리어 고수들</span></td>
+						
+						<td style="background-image:url('img/card5.jpg'); width:33.3%; height:300px; filter: brightness(60%);">
+						<span class="card-number">57,744</span><br>
+						<span class="card-text" >외국어 고수들</span></td>
+						
+						<td style="background-image:url('img/card6.jpg'); width:33.3%; height:300px; filter: brightness(60%);">
+						<span class="card-number" >49,881</span><br>
+						<span class="card-text" >스포츠 고수들</span></td>
+					</tr>
+					</tbody>	
+				</table>	
+			</div>
+		</section>
+		
+		<section class="section-4">
+			<div class="section-4-text">
+				<h1 class="section-4-title">더 많은 고객들을 만날 기회!</h1> <hr class="section-hr">
+				<h5 class="section-4-subtitle">새로운 고객을 만나세요. 가입 직후 내 조건에 맞는 요청서를 무료로 받아보고 만나고 싶은 고객에게 연락하시면 됩니다.</h5>
+			</div>
+		</section>
+		
+		<section class="section-5">
+			   <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="img/gosu1.jpg" style="width:100%; height:550px; filter: brightness(60%);">
+        <div class="text-name">김OO</div>
+        <div class="text-job">포토그래퍼 고수</div>
+        <div class="text">"프리랜서를 처음 했을 때 많이 불안했어요. SNS로 올리기만 했거든요. 그러다가 찾게 되었어요."</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="img/gosu2.jpg" style="width:100%; height:550px; filter: brightness(60%);">
+        <div class="text-name">박OO</div>
+        <div class="text-job">인테리어 고수</div>
+        <div class="text">"일단 광고비가 필요하지 않고, 인테리어를 원하는 고객들을 꾸준히 매칭시켜줘서 편하고 좋아요. "</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="img/gosu3.jpg" style="width:100%; height:550px; filter: brightness(60%);">
+        <div class="text-name">한OO</div>
+        <div class="text-job">중국어 고수</div>
+        <div class="text">"학생들을 만날 때 입소문을 통해서만 가능했는데, 따로 마케팅할 필요없이 학생들을 만날 수 있어서 좋아요."</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="img/gosu4.jpg" style="width:100%; height:550px; filter: brightness(60%);">
+        <div class="text-name">김OO</div>
+        <div class="text-job">웨딩플래너 고수</div>
+        <div class="text">"발견하고 바로 등록한 계기는 저렴한 비용으로 고객들을 만날 수 있어서에요. 합리적인 가격으로요."</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="img/gosu5.jpg" style="width:100%; height:550px; filter: brightness(60%);">
+        <div class="text-name">유OO</div>
+        <div class="text-job">피아노 고수</div>
+         <div class="text">"레슨생을 모집하는데 홍보나 마케팅에 어려움이 있었어요. 전단지도 효과가 없었죠. 지금 대부분의 학생을 이곳에서 만나고 있어요. "</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+      <a class="next" onclick="moveSlides(1)">&#10095;</a>
+    </div>
+    <br/>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+		</section>
+	
+		<section class="section-6">
+			<div class="section-6-text">
+				<h1 class="section-6-title">숨고에 가입해보세요.</h1> <hr class="section-hr">
+				<h5 class="section-6-subtitle">조건에 딱! 맞는 고수를 찾으시나요? 딱! 맞는 고객을 찾으시나요? 숨고가 도와드리겠습니다.</h5>
+				<a href="login.html" style="color:#00C7AE; font-weight:600; margin-top:-300px;">이미 계정이 있으신가요?</a>
+			</div>
+			<br>
+			<div style="margin-top:0px; text-align:center;">
+				<button type="button" class="joinBtn" onClick="location.href='joinMember.html'"> 요청자로 가입</button>
+				<button type="button" class="joinBtn" onClick="location.href='joinGosuMember.html'"> 고수로 가입</button>
+			</div>
+		</section>
+	
+	
+	<section class="section-7">	
+	<footer style="background-color:white;">
+	<br><br><br><br>	<br><br><br><br>
+	<table style="margin:auto;">
+	<tr><!-- 첫번째 줄 시작 -->
+	    <td style="width:500px; color:#00C7AE; font-size:x-large; font-weight:bold;">1599-5319</td>
+	    <td style="font-size:small; font-weight:bold;">숨고소개</td>
+	    <td style="font-size:small; font-weight:bold; padding-left:30px;">고객안내</td>
+	    <td style="font-size:small; font-weight:bold; padding-left:30px;">고수안내</td>
+	    <td style="font-size:small; font-weight:bold; padding-left:30px;">고객센터</td>
+	</tr><!-- 첫번째 줄 끝 -->
+	
+	<tr><!-- 두번째 줄 시작 -->
+	    <td valign=top style="width:500px; font-size:small; color:#737373;">평일 10:00 - 18:00<br>
+		(점심시간 13:00 - 14:00 제외 · 주말/공휴일 제외)
+		</td>
+	    <td valign=top style="font-size:small; color:#737373;">
+			<ul style="list-style: none; padding:0; margin:0; ">
+				<li>회사소개</li>
+				<li>채용안내</li>
+			</ul>
+	    </td>
+	    <td valign=top style="font-size:small; color:#737373;">
+			<ul style="list-style: none;  padding-left:30px; margin:0;">
+				<li>이용안내</li>
+				<li>안전정책</li>
+				<li>예상금액</li>
+				<li>고수찾기</li>
+				<li>숨고보증</li>
+			</ul>
+	    </td>
+	    <td valign=top style="font-size:small; color:#737373;">
+			<ul style="list-style: none;  padding-left:30px; margin:0;">
+				<li>이용안내</li>
+				<li>고수가이드</li>
+				<li>고수가입</li>
+				<li>고수센터</li>
+			</ul>
+	    </td>
+	    <td valign=top style="font-size:small; color:#737373;">
+			<ul style="list-style: none;  padding-left:30px; margin:0;">
+				<li>공지사항</li>
+				<li>자주묻는질문</li>
+			</ul>
+	    </td>
+	</tr><!-- 두번째 줄 끝 -->
+	
+	<tr><!-- 세번째 줄 시작 -->
+	    <td valign=top colspan="5"  style="height:200px;font-size:x-small; color:#737373;">이용약관 개인정보처리방침 사업자정보확인<br><br>
+			(주)브레이브모바일은 통신판매중개자로서 통신판매의 당사자가 아니며 개별 판매자가 제공하는 서비스에 대한 이행, 계약사항 등과 관련한 의무와 책임은 거래당사자에게 있습니다.<br><br>
+			상호명:(주)브레이브모바일 · 대표이사:KIM ROBIN H · 개인정보책임관리자:김태우 · 주소:서울특별시 강남구 테헤란로 431, 14층(삼성동, 라이언타워)<br>
+			사업자등록번호:120-88-22325 · 통신판매업신고증:제 2015-서울강남-00567 호 · 직업정보제공사업 신고번호:서울청 제 2019-21호<br>
+			고객센터:1599-5319 · 이메일:support@soomgo.com<br>
+			Copyright ©Brave Mobile Inc. All Rights Reserved.
+		</td>
+	</tr><!-- 두번째 줄 끝 -->
+	
+	</table>
+</footer>
+</section>
+		
+	</div>
+	
+	
+	
+	
+	</body>
+</html>
