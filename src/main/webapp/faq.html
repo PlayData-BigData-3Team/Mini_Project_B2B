@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- css : external -->
+<link type="text/css" rel="stylesheet" href="css/faq.css">
+
+<title>숨고: 숨은고수 - FAQ</title>
+</head>
+<body>
+
+	<!-- 상단 내비게이션 바 -->
+	<header class="header">
+
+		<a href="main.html" target="_self"> <img
+			src="./img/index_soomgo_logo.png" class="logo" width="100px"
+			height="38px"></a>
+		<nav>
+			<ul class="topMenu">
+				<li><a href="joinGosuMember.html" class="hederA">고수가입</a></li>
+				<li><a href="JoinMember.html" class="hederA">회원가입</a></li>
+				<li><a href="findGosuMember.html" class="hederA">고수찾기</a></li>
+				<li><a href="login.html" class="hederA">로그인</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<hr class="one">
+	<h3>FAQ | 자주묻는질문</h3>
+
+	<style>
+input[id*="answer"] {
+	display: none;
+}
+
+input[id*="answer"]+label {
+	display: block;
+	padding: 20px;
+	border: 1px solid #00C7AE;
+	border-bottom: 0;
+	color: #fff;
+	font-weight: 900;
+	background: #00C7AE;
+	cursor: pointer;
+	position: relative;
+}
+
+input[id*="answer"]+label em {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	margin-top: -15px;
+	display: inline-block;
+	background: url('./img/arrow.png') 0 0 no-repeat;
+}
+
+input[id*="answer"]+label+div {
+	max-height: 0;
+	transition: all .35s;
+	overflow: hidden;
+	background: #ebf8ff;
+	font-size: 11px;
+}
+
+input[id*="answer"]+label+div p {
+	display: inline-block;
+	padding: 20px;
+}
+
+input[id*="answer"]:checked+label+div {
+	max-height: 300px;
+}
+
+input[id*="answer"]:checked+label em {
+	background-position: 0 -30px;
+}
+</style>
+	<hr>
+
+	<br>
+
+	<table class="accordion" width="auto">
+		<tr>
+			<td width="700px">
+				<div id="maintext">
+					<span style="font-size: 1.5em"><strong>[숨고 첫걸음]</strong></span>
+				</div> <br>
+				<div>
+					<input type="checkbox" id="answer01"> <label for="answer01">
+						★ [숨고] 숨고는 어떤 서비스인가요?<em></em>
+					</label>
+					<div>
+						<p>숨고는 생활서비스가 필요한 고객과 고수를 연결합니다.
+						<br>1000가지 서비스 숨은고수를 숨고 단 한 곳에서 쉽게 만나세요.
+						<br>숨고는 480만 명의 고객이 선택한 생활서비스 매칭 플랫폼 입니다.</p>
+					</div>
+				</div>
+				<div>
+					<input type="checkbox" id="answer02"> <label for="answer02">[숨고] 고객이란?<em></em></label>
+					<div>
+						<p>숨고를 통해 고수로부터 원하는 생활서비를 제공받는 사람입니다.</p>
+					</div>
+				</div>
+				<div>
+					<input type="checkbox" id="answer03"> <label for="answer03">[숨고] 고수란?<em></em></label>
+					<div>
+						<p>숨고를 통해 고객들에게 전문적인 생활 서비스를 제공하는 사람입니다</p>
+					</div>
+				</div>
+				<div>
+					<input type="checkbox" id="answer04"> <label for="answer04">[숨고] 숨고캐시란?<em></em></label>
+					<div>
+						<p>숨고 웹/앱에서 고객과 연락을 하려면 숨고캐시가 필요합니다.
+						<br>숨고캐시는 숨고 웹/앱ㅇ 로그인한 뒤 충전할 수 있습니다.
+						<br>필요할 때마다 충전할 수도 있고, 자동충전 기능을 사용할 수도 있습니다.
+						<br>사용하지 않은 충전캐시는 언제든지 환불할 수 있습니다.</p>
+					</div>
+				</div>
+			</td>
+
+			<td width="700px">
+				<div class="accordion" id="maintext">
+					<span style="font-size: 1.5em"><strong>[고수 가이드]</strong></span>
+				</div> <br>
+
+				<div class="accordion">
+					<input type="checkbox" id="answer05"> <label for="answer05">★ [숨고캐시] 숨고캐시는 어떻게 충전하나요?<em></em></label>
+					<div>
+						<p>숨고캐시는 필요할 때, 필요한 금액만큼 숨고 웹/앱에서 충전하세요.
+						<br>숨고캐시 결제 수단은 신용카드, 체크카드(기프트카드 제외), 휴대폰 소액결제를 사용할 수 있습니다.
+						<br><br>자동충전 기능을 사용하면 충전캐시의 10%를 보너스캐시로 드립니다.</p>
+					</div>
+				</div>
+
+				<div class="accordion">
+					<input type="checkbox" id="answer06"> <label for="answer06">★ [견적발송] 견적은 어떻게 보내나요?<em></em></label>
+					<div>
+						<p>고객의 요청서를 확인하신 후, 고수님과 조건이 맞는 요청서에 대해서만 견적(견적금액과 프로필)을 발송해주시면 됩니다.
+						<br>요청서를 바탕으로 산정한 견적금액을 입려하신 후 발송하시면, 고객은 견적금액과 함께 고수님의 프로필을 확인하게 됩니다.
+						<br>견적 발송을 위해서는 숨고캐시(견적발송 비용)가 필요합니다.</p>
+					</div>
+				</div>
+
+				<div class="accordion">
+					<input type="checkbox" id="answer07"> <label for="answer07">★ [견적금액] 나의 견적금액이 적당한가요?<em></em></label>
+					<div>
+						<p>견적금액은 고수의 경력, 서비스 방식, 서비스 지역이나 시간 등에 따라 달라지므로 정확한 가격을 안내하기 어렵습니다.
+						<br>하지만 숨고 예상금액 페이지를 통해 평균 견적을 확인할 수 있습니다.
+						<br>예상금액 페이지는 숨고에서 거래되는 각 서비스의 평균 금액을 기준으로 산정하였습니다.
+						<br>인테리어, 청소 등 일회성 서비스는 건당 금액을 기준으로 표시하고, 레슨 서비스는 시간당 비용을 기준으로 표시합니다.</p>
+					</div>
+				</div>
+				<div>
+					<input type="checkbox" id="answer08"> <label for="answer08">★ [채팅] 견적을 보낸 후 고객과 어떻게 연락하나요?<em></em></label>
+					<div>
+						<p>요청서를 받고, 고객에게 견적을 보내면 채팅방이 자동으로 열립니다. 채팅방에서는 다음의 기능을 사용하여 고객과 연락할 수 있습니다.
+						<br>안심번호 통화
+						<br>채팅방 내 전화기 모양을 클릭하면 고객의 안심번호를 확인하고, 전화를 걸 수 있습니다.
+						<br>안심번호로 문자를 발송할 수는 없으니 채팅 기능을 이용하세요.
+						<br>안심번호는 견적서를 보낸 날부터 7일 동안만 유효합니다.</p>
+					</div>
+				</div>
+			</td>
+
+		</tr>
+	</table>
+
+	<br>
+	<table class="accordion" width="auto">
+		<tr>
+			<td width="700px">
+				<div id="maintext">
+					<span style="font-size: 1.5em"><strong>[고객 가이트]</strong></span>
+				</div> <br>
+				<div>
+					<input type="checkbox" id="answer09"> <label for="answer09">
+						★ [요청서] 숨고에서 고객과 고수는 어떻게 연결되나요?<em></em>
+					</label>
+					<div>
+						<p>숨고는 1000가지 서비스의 전문가와 고객을 연결하는 플랫폼입니다.
+						<br>더 나은 생활을 위해 고수의 도움이 필요하다면 서비스별 맞춤 요청서를 작성하세요.
+						<br>숨고가 요청하신 내용 및 조건에 맞는 고수들에게 요청서를 매칭해드립니다.
+						<br><br>매칭된 요청서를 확인한 고수는 서비스별 견적을 제안합니다. 요청서의 내용이 자세할수록 더 많은 고수로부터 견적을 받아볼 수 있습니다.
+						<br>고수로부터 견적을 받았다면, 채팅을 통해 구체적인 내용을 조율할 수 있습니다. 만족스러운 제안을 받으셨다면 고수와 거래를 시작하세요.</p>
+					</div>
+				</div>
+				<div>
+					<input type="checkbox" id="answer10"> <label for="answer10">★ [요청서] 요청서는 무엇인가요? 작성은 어떻게 하나요?<em></em></label>
+					<div>
+						<p>쉽고 빠르게 원하는 조건의 전문가를 찾아보세요!
+						<br>고객은 도움이 필요한 생활 서비스에 대해 요청서를 작성합니다.
+						<br>고수는 요청서를 살펴본 후 나에게 잘 맞는 요청이라고 생각되면 견적서를 보내 금액 및 서비스 내용을 제안합니다.
+						<br><br>숨고 앱(APP) 또는 웹사이트(PC)에서 원하는 서비스를 선택하시거나 홈페이지 메인 화면 상단 검색창에 원하는 서비스를 검색하시면 해당 서비스의 요청서를 작성하실 수 있습니다.</p>
+					</div>
+				</div>
+				<div>
+					<input type="checkbox" id="answer11"> <label for="answer11">[안전거래] 안전거래 사용시, 고수가 수수료를 요구합니다. 어떻게 해야하나요?<em></em></label>
+					<div>
+						<p>안전거래를 진행하여도 고수가 부담하는 수수료는 전혀 없습니다. 
+						<br><br>고수가 책정한 서비스 금액을 입력하면 수수료를 포함한 총 금액이 자동으로 고객에게 안내됩니다.
+						<br>고객은 서비스 금액에 안전거래 수수료를 더하여 숨고 가상 계좌로 입금하게 됩니다. 고객이 거래 확정 버튼을 누르면, 차감 없이 서비스 금액 전액이 고수님의 계좌로 입금됩니다.</p>
+					</div>
+				</div>
+				<div>
+					<input type="checkbox" id="answer12"> <label for="answer12">[인증] 숨고의 고수는 어떤 분들인가요?<em></em></label>
+					<div>
+						<p>숨고의 고수는 다양한 분야의 전문 경력과 이력을 가진 분들입니다.
+						<br>고수는 휴대전화 본인인증을 후 제공 가능한 서비스 분야와 주소지(소재지), 이동 가능 거리 등을 직접 입력합니다.
+						<br>서비스 특성에 따라 사업자등록증, 자격증, 경력, 직원 수 등을 프로필에 기재합니다
+						<br><br>인테리어, 법률, 부동산, 이사 등 서비스의 고수는 관련 법령에 따라 사업자등록증 및 자격증을 필수로 등록합니다.
+						<br>숨고는 개인정보보호를 위해 사업자등록증, 자격증의 등록 여부만을 프로필에 기재하고 있습니다.
+						<br>거래 전 고수의 프로필 정보를 꼼꼼히 확인하세요.</p>
+					</div>
+				</div>
+			</td>
+
+			<td width="700px">
+				<div class="accordion" id="maintext">
+					<span style="font-size: 1.5em"><strong>[공지사항]</strong></span>
+				</div> <br>
+
+				<div class="accordion">
+					<input type="checkbox" id="answer13"> <label for="answer13">★ [21.06.22] 숨고 서비스 점검 안내(6/30 01:00~07:00)<em></em></label>
+					<div>
+						<p>안녕하세요, 숨고입니다.
+						<br>항상 숨고를 이용해주시는 고수님, 고객님께 감사드립니다.
+						<br><br>보다 안정적인 서비스 제공을 위해 6월30일(수) 01:00 시부터 07:00까지
+						<br>사이트 및 서버 점검이 진행될 예정입니다.
+						<br><br>점검시간 동안 숨고 어플리케이션 또는 사이트의 서비스 이용이 불가능하오니 양해 부탁 드립니다.
+						<br><br>감사합니다.
+						<br><br>점검일시 2021.06.30(수) 01:00 ~ 07:00
+						<br>(*작업 진행에 따라 점검 시간이 단축되거나 연장될 수 있는 점 참고해 주시기 바랍니다.)</p>
+					</div>
+				</div>
+
+				<div class="accordion">
+					<input type="checkbox" id="answer14"> <label for="answer14">★ [21.06.16] 숨고캐시 사용방식 변경 안내(6/30 반영)<em></em></label>
+					<div>
+						<p>안녕하세요, 숨고입니다. 
+						<br>숨고를 아껴주시는 고수님들께 진심으로 감사드립니다.
+						<br><br>2021년 6월 30일, 숨고캐시 사용방식이 한번만 사용으로 변경됩니다.
+						<br>이번 업데이트에는 설문조사에 참여한 12,240명의 고수님들의 의견이 적극 반영되었습니다.
+						<br><br>한번만 사용, 이런 점이 좋습니다.
+						<br><br>1. 채팅상담 비용이 사라져, 총 발송 비용이 50% 수준으로 낮아집니다.
+						<br>2. 견적서에 상세설명을 1,000자까지 쓸 수 있습니다. 
+						<br>3. 견적서에 필요한 사진을 첨부할 수 있습니다.
+						<br><br>달라지는 내용도 함께 알려드려요! 
+						<br><br>1. 로견적 론칭 혜택 종료되어 정상가로 제공됩니다. 변경 후에도 바로견적은 일반견적보다 30% 저렴합니다.
+						<br>2. 견적상담 비용이 사라져, 자동견적은 무료로 이용하실 수 있습니다. </p>
+					</div>
+				</div>
+
+				<div class="accordion">
+					<input type="checkbox" id="answer15"> <label for="answer15">★ [21.06.16] 숨고캐시 사용방식 설문조사 결과<em></em></label>
+					<div>
+						<p>전체 설문조사 결과
+						<br>고수님은 나눠서 사용 방식보다 한번만 사용 방식을 선호하는 것으로 나타났습니다.
+						<br>전체 응답자 12,240명 중 61.8%인 7,571명의 고수님이 한번만 사용 방식을 선택하셨습니다.
+						<br><br>대표서비스 종류에 따라
+						<br>고수님은 대표서비스 종류에 관계 없이 한번만 사용 방식을 선호하는 것으로 나타났습니다.
+						<br>한번만 사용 방식을 가장 선호하는 집단은 홈/리빙으로입니다. 응답자 중 69.0%의 고수님이 한번만 사용 방식을 선택하셨습니다.
+						<br>각 그룹은 대표서비스의 카테고리를 기준으로 나누었습니다.</p>
+					</div>
+				</div>
+				<div>
+					<input type="checkbox" id="answer16"> <label for="answer16">★ [21.06.16] [이벤트] 친구를 초대할 때마다 나도 친구도 숨고캐시 받아요<em></em></label>
+					<div>
+						<p>안녕하세요, 숨고입니다
+						<br>숨고 고수님을 대상으로 친구를 초대할 때마다 숨고캐시 받아요 이벤트를 진행합니다.
+						<br><br>숨고 고수님이라면 누구나 친구에게 초대 링크를 보낼 수 있습니다. 
+						<br>초대 링크로 가입한 친구에게는 즉시 10,000 보너스캐시가 지급되며,
+						<br>가입한 날로부터 30일 이내에 숨고캐시를 첫 구매하면, 친구를 초대한 고수님께도 5,000보너스캐시를 드립니다.
+						<br><br>친구 추천 횟수는 제한이 없으며, 이벤트 조건을 충족하면 보너스 캐시가 무제한 지급됩니다. 
+						<br>숨고에 고수가 아닌 고객으로만 가입한 친구라면 초대받을 수 있습니다. </p>
+					</div>
+				</div>
+			</td>
+
+		</tr>
+	</table>
+	<!-- footer -->
+	<br>
+	<hr>
+	<footer style="background-color: white;">
+		<table style="margin: auto;">
+			<tr>
+				<!-- 첫번째 줄 시작 -->
+				<td
+					style="width: 500px; color: #00C7AE; font-size: x-large; font-weight: bold;">1599-5319</td>
+				<td style="font-size: small; font-weight: bold;">숨고소개</td>
+				<td style="font-size: small; font-weight: bold; padding-left: 30px;">고객안내</td>
+				<td style="font-size: small; font-weight: bold; padding-left: 30px;">고수안내</td>
+				<td style="font-size: small; font-weight: bold; padding-left: 30px;">고객센터</td>
+			</tr>
+			<!-- 첫번째 줄 끝 -->
+
+			<tr>
+				<!-- 두번째 줄 시작 -->
+				<td valign=top
+					style="width: 500px; font-size: small; color: #737373;">평일
+					10:00 - 18:00<br> (점심시간 13:00 - 14:00 제외 · 주말/공휴일 제외)
+				</td>
+				<td valign=top style="font-size: small; color: #737373;">
+					<ul style="list-style: none; padding: 0; margin: 0;">
+						<li>회사소개</li>
+						<li>채용안내</li>
+					</ul>
+				</td>
+				<td valign=top style="font-size: small; color: #737373;">
+					<ul style="list-style: none; padding-left: 30px; margin: 0;">
+						<li>이용안내</li>
+						<li>안전정책</li>
+						<li>예상금액</li>
+						<li>고수찾기</li>
+						<li>숨고보증</li>
+					</ul>
+				</td>
+				<td valign=top style="font-size: small; color: #737373;">
+					<ul style="list-style: none; padding-left: 30px; margin: 0;">
+						<li>이용안내</li>
+						<li>고수가이드</li>
+						<li>고수가입</li>
+						<li>고수센터</li>
+					</ul>
+				</td>
+				<td valign=top style="font-size: small; color: #737373;">
+					<ul style="list-style: none; padding-left: 30px; margin: 0;">
+						<li>공지사항</li>
+						<li>자주묻는질문</li>
+					</ul>
+				</td>
+			</tr>
+			<!-- 두번째 줄 끝 -->
+
+			<tr>
+				<!-- 세번째 줄 시작 -->
+				<td valign=top colspan="5"
+					style="height: 200px; font-size: x-small; color: #737373;">이용약관
+					개인정보처리방침 사업자정보확인<br> <br> (주)브레이브모바일은 통신판매중개자로서 통신판매의
+					당사자가 아니며 개별 판매자가 제공하는 서비스에 대한 이행, 계약사항 등과 관련한 의무와 책임은 거래당사자에게 있습니다.<br>
+					<br> 상호명:(주)브레이브모바일 · 대표이사:KIM ROBIN H · 개인정보책임관리자:김태우 ·
+					주소:서울특별시 강남구 테헤란로 431, 14층(삼성동, 라이언타워)<br>
+					사업자등록번호:120-88-22325 · 통신판매업신고증:제 2015-서울강남-00567 호 · 직업정보제공사업
+					신고번호:서울청 제 2019-21호<br> 고객센터:1599-5319 ·
+					이메일:support@soomgo.com<br> Copyright ©Brave Mobile Inc. All
+					Rights Reserved.
+				</td>
+			</tr>
+			<!-- 두번째 줄 끝 -->
+
+		</table>
+	</footer>
+</html>

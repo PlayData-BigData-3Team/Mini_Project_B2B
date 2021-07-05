@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+/* 상단 네비게이션 바 */
+header {
+  display: flex;
+  background: white;
+  padding:20px 20px 18px 20px;
+  border-style: solid 1px;
+}
+nav {
+  margin-left: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+img.logo {
+width:150.23px;
+height:36px;
+}
+ul.topMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+li.icon {
+  flex-basis: 25%;
+}
+a {
+	text-decoration : none;
+	font-size:15px;
+}
+a.hederA {
+  display: block;
+  text-align: center;
+  margin: .20rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: grey;
+}
+a.hederA:hover {
+  border-radius: 5px;
+  color:white;
+  background:#00C7AE;
+}
+#gosuJoin {
+  border-radius: 5px;
+  color:white;
+  background:#00C7AE;
+}
+
+/* 탭 전체 스타일 */
+.tabs {
+	margin-top: 43px;
+	padding-bottom: 40px;
+	background-color: white;
+	width: 600px;
+	float: left;
+	margin-left: 110px;
+}
+
+/* 탭 스타일 */
+.tab_item {
+	width: calc(100%/ 2);
+	height: 50px;
+	border-bottom: 1px solid gray;
+	background-color: white;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+	color: gray;
+	display: block;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+}
+
+.tab_item:hover {
+	opacity: 0.75;
+}
+
+/* 라디오 버튼 UI삭제*/
+input[name="tab_item"] {
+	display: none;
+}
+
+/* 탭 컨텐츠 스타일 */
+.tab_content {
+	display: none;
+	padding: 40px 40px 0;
+	clear: both;
+	overflow: hidden;
+	height: 346px;
+}
+
+/* 선택 된 탭 콘텐츠를 표시 */
+#service:checked ~ #service_content, #user:checked ~ #user_content {
+	display: block;
+}
+
+/* 선택된 탭 스타일 */
+.tabs input:checked+.tab_item {
+	background-color: white;
+	color: black;
+	border-bottom: 3px solid black;
+}
+
+/* 검색 서비스 */
+.search {
+	height: 50px;
+	width: 350px;
+	border: 2px solid #00C7AE;
+	background: #ffffff;
+	margin-top: 25px;
+}
+
+input {
+	font-size: 16px;
+	width: 325px;
+	padding:10px;
+	border: 0px;
+	outline: none;
+	float: left;
+	line-height: 31px;
+}
+
+button {
+	width: 50px;
+	height: 100%;
+	border: 2px solid #00C7AE;
+	background: #00C7AE;
+	outline: none;
+	float: right;
+	color: #ffffff;
+}
+
+
+/* 고수등록하기 버튼 스타일 */
+.btn {
+	display: block;
+	width: 250px;
+	height: 60px;
+	line-height: 40px;
+	border: 1px #00C7AE solid;
+	border-radius: 10px;
+	margin: 15px auto;
+	float: left;
+	background-color: #00C7AE;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	transition: all 0.9s, color 0.3;
+	font-size: 1.2em;
+}
+
+.btn:hover {
+	color: #fff;
+}
+
+.hover4:hover {
+	box-shadow: 250px 0 0 0 rgba(0, 0, 0, 0.25) inset,
+				 	 -250px 0 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+/* 오른쪽 슬라이드 이미지 */
+.slider {
+	width: 551px;
+	height: 641px;
+	position: relative;
+	margin-left: 700px;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+.slider input[type=radio] {
+	display: none;
+}
+
+ul.imgs {
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+ul.imgs li {
+	position: absolute;
+	left: 640px;
+	transition-delay: 1s;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.bullets {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 20px;
+	z-index: 2;
+}
+
+.bullets label {
+	display: inline-block;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.55);
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.slider input[type=radio]:nth-child(1):checked ~.bullets>label:nth-child(1)
+	{
+	background-color: #fff;
+}
+
+.slider input[type=radio]:nth-child(2):checked ~.bullets>label:nth-child(2)
+	{
+	background-color: #fff;
+}
+
+.slider input[type=radio]:nth-child(3):checked ~.bullets>label:nth-child(3)
+	{
+	background-color: #fff;
+}
+
+.slider input[type=radio]:nth-child(4):checked ~.bullets>label:nth-child(4)
+	{
+	background-color: #fff;
+}
+
+.slider input[type=radio]:nth-child(1):checked ~ul.imgs>li:nth-child(1)
+	{
+	left: 0;
+	transition: 0.5s;
+	z-index: 1;
+}
+
+.slider input[type=radio]:nth-child(2):checked ~ul.imgs>li:nth-child(2)
+	{
+	left: 0;
+	transition: 0.5s;
+	z-index: 1;
+}
+
+.slider input[type=radio]:nth-child(3):checked ~ul.imgs>li:nth-child(3)
+	{
+	left: 0;
+	transition: 0.5s;
+	z-index: 1;
+}
+
+.slider input[type=radio]:nth-child(4):checked ~ul.imgs>li:nth-child(4)
+	{
+	left: 0;
+	transition: 0.5s;
+	z-index: 1;
+}
